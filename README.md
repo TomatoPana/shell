@@ -42,21 +42,24 @@ Muestra carpetas, archivos y links simbólicos en el presente directorio o en el
 
 - `-a, --all`: Muestra todo en el directorio.
 - `-A, --almost-all`: No muestra archivos que inician en `.` ni muestra `.` y `..`.
+- `-l`: Usa formato largo, mostrando todas las propiedades del archivo
+- `-t`: Ordenar por tiempo. Recién creados primero
+- `-r`: Usar orden inverso al especificado
 - `[ruta]`: Si se especifica, ruta de donde se quiera listar archivos
 
 ## rm (Elimina fichero)
 
-Elimina ficheros
+Elimina ficheros.
+Obligatorio especificar archivo o directorio.
 
 - `-r, --recursive`: Si se especifica un directorio, elimina el directorio y su contenido.
 - `-f, --force`: Ignora archivos/directorios no existentes. No hacer prompt. Sobrescribe `-i` y `-I`
-- `-i`: Preguntar por cada archivo/directorio.
-- `-I`: Preguntar solo una vez por toda la operación
 - `-d, --dir`: Elimina solo carpetas vacías
 
 ## cp (Copiar archivos)
 
 Copia un archivo en `origen` hacia `destino`.
+Tanto `origen` como `destino` son obligatorios. Pueden ser rutas absolutas o relativas.
 
 - `-f, --force`: Si el destino existe, sobrescribir.
 - `-r, --recursive`: Copia de forma recursiva de `origen` a `destino`
@@ -64,16 +67,18 @@ Copia un archivo en `origen` hacia `destino`.
 ## mv (Mover archivos)
 
 Mueve un archivo en `origen` hacia `destino`.
+Tanto `origen` como `destino` son obligatorios. Pueden ser rutas absolutas o relativas.
 
 - `-f, --force`: Si el destino existe, sobrescribir.
 - `-r, --recursive`: Mueve de forma recursiva de `origen` a `destino`.
 
 ## touch (Crear archivos)
 
-Crea un nuevo archivo
+Crea un nuevo archivo.
+Obligatorio el nombre del archivo
 
 - `-z, --size`: Tamaño (en bytes) del archivo a crear
-- `-f, -force-`: Si el destino existe, sobrescribir
+- `-f, --force`: Si el destino existe, sobrescribir
 
 ## ln (Crear links simbólicos)
 
