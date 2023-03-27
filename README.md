@@ -2,6 +2,35 @@
 
 El presente programa simula un sistema de archivos sin hacer uso de las funciones del sistema operativo.
 Por defecto se inicia en la ruta raíz `/`.
+
+## Dependencias
+
+Para poder compilar y ejecutar el siguiente proyecto, se requiere tener instalado `gcc`, `g++` y `make`.
+Asi como tener incluido en el `$PATH` dichos comandos.
+*IMPORTANTE!* Este proyecto solo puede ser compilado en Linux. Para compilar en windows, usar [`WSL`](https://learn.microsoft.com/en-us/windows/wsl/install).
+
+Para instalar dichas dependencias se pueden usar los siguientes comandos basados en ciertas distros:
+
+En Distros basados en Debian (Ubuntu/Lubuntu/ElementaryOS):
+
+```sh
+sudo apt install build-essential gbd
+```
+
+En Distros basados en Red Hat (CentOS, Fedora):
+
+```sh
+sudo yum install make gcc gcc-c++ kernel-devel
+```
+
+En Distros basados en Arch (Manjaro, Arch Linux, SteamOS):
+
+```sh
+sudo pacman -Syu base-devel
+```
+
+## Contenido del Programa
+
 Los comandos que van a estar disponibles son los siguientes
 
 - mkdir

@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "/usr/lib/gcc/x86_64-redhat-linux/12/../../../../include/c++/12",
+        "/usr/lib/gcc/x86_64-redhat-linux/12/../../../../include/c++/12/x86_64-redhat-linux",
+        "/usr/lib/gcc/x86_64-redhat-linux/12/../../../../include/c++/12/backward",
+        "/usr/lib/gcc/x86_64-redhat-linux/12/include",
+        "/usr/local/include",
+        "/usr/include",
+        "${workspaceFolder}/**"
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/g++",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "linux-gcc-x64"
+    }
+  ],
+  "version": 4
+}
